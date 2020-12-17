@@ -127,7 +127,10 @@ img {
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
 }
-
+/* Stats */
+.stats {
+  padding-top:  100px;
+}
 /* Utilities */
 .container {
   max-width: 1100px;
