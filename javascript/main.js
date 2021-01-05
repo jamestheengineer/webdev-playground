@@ -17,3 +17,13 @@ const y = undefined;
 let z; // undefined
  
 console.log(typeof name);
+
+// Concatenation
+console.log('My name is '+ name + 'and I am' + age); // old way
+console.log(`My name is ${name} and I am ${age}`);
+hello = `My name is ${name} and I am ${age}`;
+
+const s = 'Hello World';
+console.log(s.length);
+console.log(s.toUpperCase());
+console.log(s.substring(0,5));
