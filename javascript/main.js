@@ -23,7 +23,8 @@ console.log('My name is '+ name + ' and I am ' + age); // old way
 console.log(`My name is ${name} and I am ${age}`);
 hello = `My name is ${name} and I am ${age}`;
 
-const s = 'Hello World';
+const s = 'technology, computers, it, code';
 console.log(s.length);
 console.log(s.toUpperCase());
-console.log(s.substring(0,5));
+console.log(s.substring(0,5).toUpperCase());
+console.log(s.split(', '));
