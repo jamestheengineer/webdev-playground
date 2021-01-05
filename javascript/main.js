@@ -19,7 +19,7 @@ let z; // undefined
 console.log(typeof name);
 
 // Concatenation
-console.log('My name is '+ name + 'and I am' + age); // old way
+console.log('My name is '+ name + ' and I am ' + age); // old way
 console.log(`My name is ${name} and I am ${age}`);
 hello = `My name is ${name} and I am ${age}`;
 
