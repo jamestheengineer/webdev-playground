@@ -36,7 +36,20 @@ comment */
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
 
-const fruits = ['apples', 'oranges', 'pears', 10, true];
+const fruits = ['apples', 'oranges', 'pears'];
+
+fruits[3] = 'grapes'; //notice you can still add even though const, you just can't reassign to a different array
+
+fruits.push('mangos');
+
+fruits.unshift('strawberries');
+
+fruits.pop();
+
+Array.isArray(fruits);
+
+console.log(fruits.indexOf('oranges'));
+
 console.log(fruits);
 
 
