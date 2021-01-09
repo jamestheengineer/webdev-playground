@@ -35,21 +35,29 @@ line
 comment */
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
-
 const fruits = ['apples', 'oranges', 'pears'];
-
 fruits[3] = 'grapes'; //notice you can still add even though const, you just can't reassign to a different array
-
 fruits.push('mangos');
-
 fruits.unshift('strawberries');
-
 fruits.pop();
-
 Array.isArray(fruits);
-
 console.log(fruits.indexOf('oranges'));
-
 console.log(fruits);
+
+// Object literals
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+        street: '50 Main St.',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+
+console.log(person, person.firstName, person.lastName);
+console.log(person.hobbies[1]);
 
 
