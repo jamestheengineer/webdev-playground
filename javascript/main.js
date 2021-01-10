@@ -86,3 +86,22 @@ const todos = [
 ];
 
 console.log(todos);
+
+console.log(todos[1].text);
+
+// convert to json
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+// loops
+for(let i = 0; i <= 10; i++) {
+    console.log(i);
+    console.log(`For Loops Number: ${i}`);
+}
+
+// while
+let i = 0;
+while(i < 10) {
+    console.log(`While loop number: ${i}`);
+    i++
+}
