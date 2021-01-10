@@ -60,4 +60,29 @@ const person = {
 console.log(person, person.firstName, person.lastName);
 console.log(person.hobbies[1]);
 
+const { firstName, lastName, address: {city} } = person;
+console.log(city);
 
+person.email = 'john@gmail.com';
+
+console.log(person);
+
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true,
+    },
+    {
+        id: 2,
+        text: 'Buy a 4Runner',
+        isCompleted: false,
+    },
+    {
+        id: 3,
+        text: 'Be sad about 4Runner',
+        isCompleted: true,
+    }
+];
+
+console.log(todos);
