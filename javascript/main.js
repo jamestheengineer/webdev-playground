@@ -125,3 +125,18 @@ const todoCompleted = todos.filter(function(todo){
 });
 
 console.log(todoCompleted);
+
+// Conditionals
+const num = 10;
+
+if (num == '10') {
+    console.log('num is 10');
+}
+
+// Triple also matches type
+if (num === '10') {
+    console.log('num is string 10');
+}
+else {
+    console.log('nah');
+}
