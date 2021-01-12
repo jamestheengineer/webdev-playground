@@ -80,7 +80,7 @@ const todos = [
     },
     {
         id: 3,
-        text: 'Be sad about 4Runner',
+        text: 'Be happy about 4Runner',
         isCompleted: true,
     }
 ];
@@ -105,3 +105,23 @@ while(i < 10) {
     console.log(`While loop number: ${i}`);
     i++
 }
+
+for(let todo of todos) {
+    console.log(todo.text);
+}
+
+// forEach, map, filter
+todos.forEach(function(todo) {
+    console.log(todo.text);
+});
+
+const todoText = todos.map(function(todo){
+    return todo.text;
+});
+console.log(todoText);
+
+const todoCompleted = todos.filter(function(todo){
+    return todo.isCompleted === true;
+});
+
+console.log(todoCompleted);
