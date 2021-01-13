@@ -136,6 +136,8 @@ if (num == '10') {
 // Triple also matches type
 if (num === '10') {
     console.log('num is string 10');
+} else if (x > 10) {
+    console.log('greater than 10');
 }
 else {
     console.log('nah');
