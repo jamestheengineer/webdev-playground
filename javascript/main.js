@@ -142,3 +142,38 @@ if (num === '10') {
 else {
     console.log('nah');
 }
+
+// Ternary
+const b = 10;
+
+const color = b > 10 ? 'blue' : 'red';
+console.log(color);
+
+// switch
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is not red or blue');
+}
+
+// functions
+
+function addNums(num1=1, num2=1) {
+    console.log(num1 + num2);
+    return num1 + num2;
+}
+
+addNums(5, 4);
+addNums();
+console.log(addNums(3,4));
+
+// arrow function
+
+const addNumsArrow = (num1 = 1, num2 = 1) => {
+    return num1, num2;
+}
