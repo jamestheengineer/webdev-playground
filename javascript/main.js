@@ -177,3 +177,13 @@ console.log(addNums(3,4));
 const addNumsArrow = (num1 = 1, num2 = 1) => {
     return num1, num2;
 }
+
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+}
+
+// Instantiate
+const person1 = new Person('James', 'Bond', '01/01/01');
+console.log(person1);
