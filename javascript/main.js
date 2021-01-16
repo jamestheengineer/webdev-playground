@@ -178,12 +178,38 @@ const addNumsArrow = (num1 = 1, num2 = 1) => {
     return num1, num2;
 }
 
-function Person(firstName, lastName, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = dob;
-}
+// function Person(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+// }
 
+// Person.prototype.getBirthYear = function() {
+//     return this.dob.getFullYear();
+// }
+
+// Person.prototype.getFullName = function() {
+//     return `${this.firstName} ${this.lastName}`;
+// }
+// With ES6, we get classes. Same stuff under the hood, but syntatic sugar.
+class Person {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
 // Instantiate
-const person1 = new Person('James', 'Bond', '01/01/01');
+const person1 = new Person('James', 'Bond', '1-1-1901');
+const person2 = new Person('Mary', 'Bond', '2-2-1980');
 console.log(person1);
+
+
