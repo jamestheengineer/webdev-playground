@@ -212,4 +212,6 @@ const person1 = new Person('James', 'Bond', '1-1-1901');
 const person2 = new Person('Mary', 'Bond', '2-2-1980');
 console.log(person1);
 
+// DOM
+
 
