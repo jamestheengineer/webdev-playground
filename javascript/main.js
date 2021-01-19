@@ -213,5 +213,15 @@ const person2 = new Person('Mary', 'Bond', '2-2-1980');
 console.log(person1);
 
 // DOM
+console.log(window);
+//window.alert(1);
+//alert(1);
+// Single element selectors
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('h1'));
 
+// Multiple element selectors
+console.log(document.querySelectorAll('.item')); // can use array methods
+console.log(document.getElementsByClassName('item')); // can't use array methods
+console.log(document.getElementsByTagName('li'));
 
