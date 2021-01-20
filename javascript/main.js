@@ -225,3 +225,12 @@ console.log(document.querySelectorAll('.item')); // can use array methods
 console.log(document.getElementsByClassName('item')); // can't use array methods
 console.log(document.getElementsByTagName('li'));
 
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));
+
+const ul = document.querySelector('.items');
+//ul.remove();
+//ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'John';
+ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
