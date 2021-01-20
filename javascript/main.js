@@ -234,3 +234,15 @@ const ul = document.querySelector('.items');
 ul.firstElementChild.textContent = 'Hello';
 ul.children[1].innerText = 'John';
 ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+
+const btn = document.querySelector('.btn');
+// btn.style.background = 'red'; // Dynamic way to change color of btn
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e.target.className);
+    document.querySelector('#my-form')
+    .style.background = '#acc';
+    document.querySelector('body').classList.add('bg-dark');
+});
+
