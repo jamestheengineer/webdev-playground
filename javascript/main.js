@@ -244,5 +244,8 @@ btn.addEventListener('click', (e) => {
     document.querySelector('#my-form')
     .style.background = '#acc';
     document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('.items')
+    .lastElementChild.innerHTML = '<h1>helllo</h1>'
+    
 });
 
