@@ -1,3 +1,4 @@
+/*
 // var-nah don't use, let, const
 let age = 30; 
 age = 31 // const will throw error
@@ -30,9 +31,7 @@ console.log(s.substring(0,5).toUpperCase());
 console.log(s.split(', '));
 
 // Arrays
-/* Multi
-line 
-comment */
+
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
 const fruits = ['apples', 'oranges', 'pears'];
@@ -248,4 +247,16 @@ btn.addEventListener('click', (e) => {
     .lastElementChild.innerHTML = '<h1>helllo</h1>'
     
 });
+*/
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
 
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+    e.preventDefault();
+    console.log(nameInput.value);
+}
