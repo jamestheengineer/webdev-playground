@@ -1,5 +1,3 @@
-
-
 const Tasks = ({tasks}) => {
     
     return (
