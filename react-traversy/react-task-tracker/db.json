@@ -1,10 +1,22 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "Meeting at School",
-      "day": "Feb 6th at 1:30pm",
-      "reminder": true
+      "text": "New task",
+      "day": "Tomorrow",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Newer task",
+      "day": "Two days from now",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "No reminder task",
+      "day": "Today",
+      "reminder": false,
+      "id": 5
     }
   ]
 }
