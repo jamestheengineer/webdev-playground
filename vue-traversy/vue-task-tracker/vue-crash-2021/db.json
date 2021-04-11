@@ -17,6 +17,12 @@
       "day": "tomorrow",
       "reminder": true,
       "id": "_9Uii_q"
+    },
+    {
+      "text": "Let's finish this",
+      "day": "Now",
+      "reminder": false,
+      "id": "kev-S5P"
     }
   ]
 }
