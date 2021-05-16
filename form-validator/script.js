@@ -19,11 +19,8 @@ function showSuccess(input) {
 
 function isValidEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (re.test(input.value.trim())) {
-    showSuccess(input);
-  } else {
-    showError(input, 'Email is not valid');
-  }
+  
+  return re.test(String(email).toLowerCase());
 }
 
 // Event listeners
@@ -38,6 +35,8 @@ form.addEventListener('submit', function(e) {
 
   if(email.value === '') {
     showError(email, 'Email is required');
+  } else if (!isValidEmail(email.value)) {
+    showError(email, 'Email is not valid');
   } else {
     showSuccess(email);
   }
