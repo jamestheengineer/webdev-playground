@@ -4,13 +4,16 @@ const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
+const finalMessageRevealWord = document.getElementById(
+  'final-message-reveal-word'
+);
 
 const figureParts = document.querySelectorAll('.figure-part');
 
 const words = ['application', 'programming', 'interface', 'wizard'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-
+let playable = true;
 const correctLetters = [];
 const wrongLetters = [];
 
@@ -75,7 +78,7 @@ function showNotification() {
 // Keydown letter press
 window.addEventListener('keydown', (e) => {
   if (e.code >= 'KeyA' && e.code <= 'KeyZ') {
-    const letter = e.key;
+    const letter = e.key.toLocaleLowerCase();
     if (selectedWord.includes(letter)) {
       if (!correctLetters.includes(letter)) {
         correctLetters.push(letter);
@@ -92,6 +95,18 @@ window.addEventListener('keydown', (e) => {
       }
     }
   }
+});
+
+playAgainBtn.addEventListener('click', () => {
+  // Empty arrays
+  playable = true;
+  correctLetters.splice(0);
+  wrongLetters.splice(0);
+
+  selectedWord = words[Math.floor(Math.random() * words.length)];
+  displayWord();
+  updateWrongLettersEl();
+  popup.style.display = 'none';
 });
 
 displayWord();
