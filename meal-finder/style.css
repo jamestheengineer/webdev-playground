@@ -80,7 +80,7 @@ input[type='text'] {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,8 +102,22 @@ input[type='text'] {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .meal {
+    height: 200px;
+    width: 200px;
+  }
+}
 @media (max-width: 500px) {
   input[type='text'] {
     width: 100%;
+  }
+
+  .meals {
+    grid-template-columns: 1fr;
+  }
+
+  .meal {
+    height: 300px;
+    width: 300px;
   }
 }
