@@ -79,3 +79,35 @@ function updateCurrentText() {
 }
 
 createCards();
+
+// Event listeners
+
+// Next button
+nextBtn.addEventListener('click', () => {
+  cardsEl[currentActiveCard].className = 'card left';
+
+  currentActiveCard = currentActiveCard + 1;
+
+  if (currentActiveCard > cardsEl.length - 1) {
+    currentActiveCard = cardsEl.length - 1;
+  }
+
+  cardsEl[currentActiveCard].className = 'card active';
+
+  updateCurrentText();
+});
+
+// Prev button
+prevBtn.addEventListener('click', () => {
+  cardsEl[currentActiveCard].className = 'card right';
+
+  currentActiveCard = currentActiveCard - 1;
+
+  if (currentActiveCard < 0) {
+    currentActiveCard = 0;
+  }
+
+  cardsEl[currentActiveCard].className = 'card active';
+
+  updateCurrentText();
+});
