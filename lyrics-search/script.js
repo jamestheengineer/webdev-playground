@@ -46,4 +46,15 @@ function showData(data) {
   }
 }
 
-searchSongs('aerosmith');
+// Event listeners
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const searchTerm = search.value.trim();
+
+  if (!searchTerm) {
+    alert('Please type in a search term');
+  } else {
+    searchSongs(searchTerm);
+  }
+});
