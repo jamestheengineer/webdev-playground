@@ -90,10 +90,18 @@ function drawBricks() {
   });
 }
 
-drawBall();
-drawPaddle();
-drawBricks();
-drawScore();
+// Draw everything
+function draw() {
+  // clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  drawBall();
+  drawPaddle();
+  drawScore();
+  drawBricks();
+}
+
+draw();
 
 // Rules and close event handlers
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
